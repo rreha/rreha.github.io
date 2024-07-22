@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+
+body, html {
+	background-color: #000;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	height: 100%;
+	margin: 0;
+	font-family: Zen Kaku Gothic Antique, Verdana, Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a:hover, a:active {
+	transition: 0.1s;
+	font-weight: bold;
+	text-shadow: 0 6px 4px darkgray;
+	color: #ffaaff;
+}
+
+a:link, a:visited {
+	transition: 0.1s;
+	text-decoration: none;
+	color: #ffaaff;
+}
+
+.char {
+	z-index: 3;
+	position: absolute;
+	height: 100vh;
+	display: flex;
+	text-align: center;
+	top: 1%;
+	left: 65%;
+}
+
+.bg-image {
+	z-index: 1;
+	background-image: url("images/bg.jpg");
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	height: 100%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-text {
+	z-index: 2;
+	background-color: rgba(0,0,0, 0.5);
+	background-size: 18px 18px;
+	background-image: repeating-linear-gradient(45deg, rgba(189,167,198, 0.5) 0, rgba(255,255,255, 0.4)1.8px, rgba(189,167,198, 0.5) 0, rgba(189,167,198, 0.5) 50%);
+	box-shadow: 0 0 25px 9px #ffd0ff;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 50%;
+	padding: 20px;
+	text-align: center;
+}
+
+.bg-text p {
+	color: #ffaaff;
+}
+
+.bg-text h1 {
+	color: #ffaaff;
+	font-weight: bold;
+}
+
+.quote p {
+	font-size: 11px;
+	color: rgba(255,170,255, 0.6);
+}
+
+.links {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+  grid-template-columns: auto auto auto;
+  grid-gap: 25px;
+}
+
+.fab {
+  transition: 0.1s;
+  display: flex;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.fab:hover, .fab:active {
+	transition: 0.1s;
+	text-shadow: 0 6px 4px darkgray;
+}
+
+.fa-playstation {
+  color: #ffaaff;
+}
+
+.fa-twitter {
+  color: #ffaaff;
+}
+
+.fa-github {
+  color: #ffaaff;
+}
+
+.fa-house {
+	color: #ffaaff;
+}

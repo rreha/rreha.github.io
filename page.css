@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+
+body, html {
+	background-color: #000;
+	overflow-x:hidden;
+	overflow-y:hidden;
+	height: 100%;
+	margin: 0;
+	font-family: Zen Kaku Gothic Antique, Verdana, Tahoma, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+	flex: 33.33%;
+	padding: 5px;
+}
+
+.row {
+	display: flex;
+}
+
+a:hover, a:active {
+	transition: 0.1s;
+	font-weight: bold;
+	text-shadow: 0 6px 4px darkgray;
+	color: #ffaaff;
+}
+
+a:link, a:visited {
+	transition: 0.1s;
+	text-decoration: none;
+	color: #ffaaff;
+}
+
+.bg-image {
+	z-index: 1;
+	background-image: url("images/bg.jpg");
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+	height: 100%; 
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.bg-text {
+	z-index: 2;
+	background-color: rgba(0,0,0, 0.5);
+	background-size: 18px 18px;
+	background-image: repeating-linear-gradient(45deg, rgba(189,167,198, 0.5) 0, rgba(255,255,255, 0.4)1.8px, rgba(189,167,198, 0.5) 0, rgba(189,167,198, 0.5) 50%);
+	box-shadow: 0 0 25px 9px #ffd0ff;
+	border-radius: 10px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 70%;
+	padding: 20px;
+	text-align: center;
+}
+
+.bg-text p {
+	color: #ffaaff;
+}
+
+.bg-text h1 {
+	color: #ffaaff;
+	font-weight: bold;
+}
+
+.bg-text img {
+	transition: 0.1s;
+	height: 80px;
+	width: 144px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.bg-text img:hover, img:active {
+	transition: 0.1s;
+	filter: blur(5px);
+	-webkit-filter: blur(5px);
+}
+
+.fab {
+  transition: 0.1s;
+  display: flex;
+  grid-template-columns: auto auto auto;
+  grid-gap: 10px;
+}
+
+.fab:hover, .fab:active {
+	transition: 0.1s;
+	text-shadow: 0 6px 4px darkgray;
+}
+
+.fa-house {
+  color: #ffaaff;
+}
