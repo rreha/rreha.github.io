@@ -2,6 +2,12 @@ const ofwsel = $("#fw");
 const cfwsel = $("#cfw");
 
 ofwsel.on("change", () => {
+
+    $("#cfw option").prop("selected", function () {
+        $(".cfw-dl").fadeOut();
+        return this.defaultSelected;
+    });
+
     var ofwval = $("#fw").val();
 
     if (ofwval == 1) { // 6.61 links from Sony's update server
