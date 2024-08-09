@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Zen+Kaku+Gothic+Antique&display=swap');
+
+body, html {
+	background-color: #fff;
+	text-align: center;
+	font-family: Zen Kaku Gothic Antique, Verdana, Tahoma, sans-serif;
+}
+
+a:hover, a:active {
+	transition: 0.1s;
+	font-weight: bold;
+	text-shadow: 0 6px 4px darkgray;
+	color: #000;
+}
+
+a:link, a:visited {
+	transition: 0.1s;
+	text-decoration: none;
+	color: #000;
+}
+
+p {
+	color: #000;
+	top: 50%;
+	left: 50%;
+}
+
+h1 {
+	color: #000;
+	font-weight: bold;
+}
+
+.cfw-sel, .cfw-dl, .ofw-dl, .ofw-go-dl {
+  display: none;
+}
