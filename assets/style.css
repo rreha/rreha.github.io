@@ -1,0 +1,234 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&display=swap');
+
+body, html {
+  background-color: white;
+  color: white;
+  padding: 0;
+  margin: 0;
+	height: 100%;
+	font-family: Didact Gothic, Verdana, Tahoma, sans-serif;
+}
+
+.bg {
+  z-index: 0;
+	background-image: url("images/bg.png");
+	background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  position: fixed;
+}
+
+ul.navbar  {
+  z-index: 2;
+  margin: 0 auto;
+  padding: 0;
+  top: 0;
+  width: 100%;
+  list-style-type: none;
+  overflow: hidden;
+  position: fixed;
+  background-color: rgba(55,55,55,0.5);
+}
+
+.navbar li {
+  float: right;
+  padding-right: 25px;
+}
+
+.navbar li a {
+  color: white;
+  transition: 0.1s;
+  display: block;
+  padding: 10px 25px;
+  ext-align: center;
+  text-decoration: none;
+}
+
+.navbar li a:hover, a:active {
+  color: #fdd785;
+  transition: 0.1s;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar li {
+    padding: 10px 0;
+    order: -1;
+  }
+
+  .navbar li a {
+    padding: 10px;
+    display: block;
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar li {
+    padding-right: 10px;
+  }
+
+  .navbar li a {
+    font-size: 14px;
+  }
+}
+
+.intro {
+  z-index: 1;
+  position: relative;
+  width: 100%; 
+  margin: 125px 0 0;  
+  padding-top: 15px;
+  padding-bottom: 15px;
+  line-height: 0.85;
+  text-align: center;
+  background-color: rgba(55,55,55,0.5);
+}
+
+.intro h1 {
+  font-size: 55px;
+  font-weight: bold;
+}
+
+.intro h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.intro a {
+  text-decoration: none;
+}
+
+.intro .si {
+  color: white;
+  font-size: 30px;
+  transition: 0.1s;
+  padding: 5px;
+  padding-bottom: 20px;
+}
+
+.intro .si:hover, .si:active {
+  transition: 0.1s;
+  color: #fdd785
+}
+
+.txt {
+  z-index: 1;
+  position: relative;
+  text-align: center;
+}
+
+.txt .si {
+  color: white;
+  font-weight: normal;
+  font-size: 80px;
+  text-align: center;
+  display: inline;
+}
+
+.txt a {
+  color: white;
+  text-decoration: none;
+}
+
+.flex {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 2em;
+  margin-top: 10px;
+  flex-wrap: wrap;
+  padding-bottom: 8px;
+}
+
+.flex > div {
+  z-index: 1;
+  flex: 1 1 250px;
+  max-width: 265px;
+  min-width: 200px;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  border-radius: 25px;
+  background-color: rgba(55,55,55,0.5);
+  height: auto;
+}
+
+.flex > div > .si {
+  margin-top: 8px;
+  font-weight: normal;
+  color: white;
+  text-align: center;
+  display: inline;
+  font-size: 60px;
+}
+
+.flex > div > .fas, .flex > div > .fab {
+  margin-top: 8px;
+  color: white;
+  text-align: center;
+  display: inline;
+  font-size: 60px;
+}
+
+.flex > div > img {
+  margin-top: 8px;
+}
+
+.flex > div > .badge {
+  margin-top: -8px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.flex > div > .badge > .badgeimg {
+  display: inline-block;
+}
+
+.flex > div > p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.flex > div > h2 > a:link, .flex > div > h2 > a:visited {
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+
+.flex > div > h2 > a:hover, .flex > div > h2 > a:active {
+  transition: 0.1s;
+  color: #fdd785;
+  text-decoration: none;
+}
+
+.botbar  {
+  z-index: 2;
+  padding: 0;
+  bottom: 0;
+  width: 100%;
+  overflow: hidden;
+  background-color: rgba(55,55,55,0.5);
+  position: relative;
+}
+
+.botbar a {
+  color: white;
+  text-decoration: none;
+}
+
+.botbar p {
+  font-size: 12px;
+  color: darkgray;
+  text-align: center;
+}
