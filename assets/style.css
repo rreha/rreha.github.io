@@ -92,6 +92,10 @@ ul.navbar  {
   background-color: rgba(55,55,55,0.5);
 }
 
+.intro img {
+  margin-bottom: 5px;
+}
+
 .intro h1 {
   font-size: 55px;
   font-weight: bold;
