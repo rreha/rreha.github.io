@@ -210,35 +210,12 @@ ul.navbar  {
   text-align: center;
 }
 
-@media (min-width: 769px) {
-  .navbar {
-    flex-direction: row;
-    align-items: center;
+@media (max-width: 768px) {
+
+  body, html {
+    font-size: 14px;
   }
 
-  .navbar li {
-    padding: 10px 25px;
-    order: 0;
-  }
-
-  .navbar li a {
-    padding: 10px 25px;
-    display: block;
-  }
-
-  .intro {
-    margin: 125px 0 0;  
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-
-  .flex {
-    gap: 2em;
-    margin-top: 10px;
-  }
-}
-
-@media (min-width: 481px) and (max-width: 768px) {
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -253,9 +230,36 @@ ul.navbar  {
     padding: 10px;
     display: block;
   }
+
+  .bg {
+    background-size: auto 100%;
+  }
+
+  .intro {
+    margin-top: 75px;
+  }
+
+  .intro h1 {
+    font-size: 36px;
+  }
+
+  .intro h2 {
+    font-size: 24px;
+  }
+
+  .flex {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flex > div {
+    max-width: 300px;
+    margin-bottom: 1rem;
+  }
 }
 
 @media (max-width: 480px) {
+
   .navbar li {
     padding-right: 10px;
   }
@@ -264,15 +268,19 @@ ul.navbar  {
     font-size: 14px;
   }
 
+  .intro {
+    margin-top: 50px;
+  }
+
   .intro h1 {
-    font-size: 40px;
+    font-size: 28px;
+  }
 
   .intro h2 {
-    font-size: 24px;
+    font-size: 18px;
   }
 
   .flex > div {
-    flex: 1 1 100%;
-    max-width: 100%;
+    max-width: 250px;
   }
 }
