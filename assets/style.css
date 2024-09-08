@@ -9,6 +9,10 @@ body, html {
 	font-family: Didact Gothic, Verdana, Tahoma, sans-serif;
 }
 
+#homepage {
+    overflow: hidden; 
+}
+
 .bg {
   z-index: 0;
 	background-image: url("images/bg.png");
@@ -44,7 +48,7 @@ ul.navbar  {
   transition: 0.1s;
   display: block;
   padding: 10px 25px;
-  ext-align: center;
+  text-align: center;
   text-decoration: none;
 }
 
@@ -264,7 +268,7 @@ ul.navbar  {
   }
 
   .intro {
-    margin-top: 50px;
+    margin-top: 65px;
   }
 
   .intro h1 {
